@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minhas Finanças - Poupe Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="topo">
+
+            <img
+                src="imagem.png.png"
+                alt="Logo Poupe Bank"
+                class="logo"
+            >
+
+            <div class="titulo">
+
+                <h1>
+                    Poupe Bank
+                </h1>
+
+                <p>
+                    Plataforma de Finanças Pessoais
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="menu-principal">
+
+            <a href="index.html">
+                Início
+            </a>
+
+
+            <div class="dropdown">
+
+                <a href="#" class="dropdown-btn">
+                    Login ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="login.html">
+                        Entrar
+                    </a>
+
+                    <a href="cadastro.html">
+                        Criar conta
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="dropdown">
+
+                <a href="#" class="dropdown-btn">
+                    Sobre ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="sobre.html#empresa">
+                        Empresa
+                    </a>
+
+                    <a href="sobre.html#clientes">
+                        Clientes
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="dropdown">
+
+                <a href="#" class="dropdown-btn">
+                    Contato ▾
+                </a>
+
+                <div class="submenu contato-menu">
+
+                    <div class="contato-item">
+
+                        <strong>
+                            Telefone
+                        </strong>
+
+                        <span>
+                            (32) 9912-4578
+                        </span>
+
+                    </div>
+
+                    <div class="contato-item">
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            finançasbank@gmail.com.br
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- FINANÇAS -->
+
+    <main class="pagina">
+
+        <section class="financas">
+
+            <div class="financas-topo">
+
+                <div>
+
+                    <span class="tag">
+                        PAINEL FINANCEIRO
+                    </span>
+
+                    <h2>
+                        Minhas Finanças
+                    </h2>
+
+                    <p>
+                        Organize seus ganhos e despesas
+                        de forma simples.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMO -->
+
+            <div class="resumo-grid">
+
+                <div class="resumo-card">
+
+                    <small>
+                        Ganhos
+                    </small>
+
+                    <strong
+                        id="totalGanhos"
+                        class="verde"
+                    >
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-card">
+
+                    <small>
+                        Despesas
+                    </small>
+
+                    <strong
+                        id="totalDespesas"
+                        class="vermelho"
+                    >
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-card destaque">
+
+                    <small>
+                        Saldo
+                    </small>
+
+                    <strong id="saldo">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOVIMENTAÇÕES -->
+
+            <div class="movimentacoes">
+
+
+                <!-- GANHO -->
+
+                <div class="campo-financeiro">
+
+                    <div class="icone-financeiro">
+                        +
+                    </div>
+
+                    <h3>
+                        Cadastrar ganho
+                    </h3>
+
+                    <p>
+                        Adicione um valor recebido.
+                    </p>
+
+                    <form id="formGanho">
+
+                        <label for="ganho">
+                            Valor
+                        </label>
+
+                        <input
+                            type="number"
+                            id="ganho"
+                            name="ganho"
+                            step="0.01"
+                            min="0"
+                            placeholder="Ex: 1500.00"
+                            required
+                        >
+
+                        <button type="submit">
+                            Adicionar ganho
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- DESPESA -->
+
+                <div class="campo-financeiro">
+
+                    <div class="icone-financeiro vermelho-bg">
+                        −
+                    </div>
+
+                    <h3>
+                        Cadastrar despesa
+                    </h3>
+
+                    <p>
+                        Adicione um valor gasto.
+                    </p>
+
+                    <form id="formDespesa">
+
+                        <label for="despesa">
+                            Valor
+                        </label>
+
+                        <input
+                            type="number"
+                            id="despesa"
+                            name="despesa"
+                            step="0.01"
+                            min="0"
+                            placeholder="Ex: 200.00"
+                            required
+                        >
+
+                        <button type="submit">
+                            Adicionar despesa
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <p id="mensagemFinancas">
+                Adicione seus ganhos e despesas
+                para acompanhar seu saldo.
+            </p>
+
+
+            <a
+                href="index.html"
+                class="voltar"
+            >
+                ← Voltar para o início
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+
+            <strong>
+                Poupe Bank
+            </strong>
+
+            <p>
+                Plataforma de Finanças Pessoais
+            </p>
+
+        </div>
+
+        <p>
+            © Henrique e João Pedro 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
